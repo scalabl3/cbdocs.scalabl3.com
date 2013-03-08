@@ -2,18 +2,23 @@
 <html>
 <head>
   <title>sample layout</title>
-  <link rel="stylesheet" href="bootstrap2/css/bootstrap.min.css" type="text/css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" type="text/css" media="screen" title="no title" charset="utf-8">
   <link rel="stylesheet" href="bootstrap/css/bootstrap-responsive.min.css" type="text/css" media="screen" title="no title" charset="utf-8">
-  <link rel="stylesheet" href="sunlight-1.17.437/themes/sunlight.default.css" type="text/css" media="screen" title="no title" charset="utf-8">
-  <link rel="stylesheet" href="cb_doc.css" type="text/css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="css/cb_doc.css" type="text/css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="highlight.js/styles/tomorrow.css" type="text/css" media="screen" title="no title" charset="utf-8">
   
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script src="sunlight-1.17.437/sunlight-all-min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="highlight.js/highlight.pack.js" type="text/javascript" charset="utf-8"></script>
 
   
-  <script src="cb_doc.navigation.js" type="text/javascript" charset="utf-8"></script>
-  <script src="cb_doc.codesamples.js" type="text/javascript" charset="utf-8"></script>
-  <script src="cb_doc.init.js" type="text/javascript" charset="utf-8"></script>  
+  <script src="js/cb_doc.navigation.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/cb_doc.codesamples.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/cb_doc.init.js" type="text/javascript" charset="utf-8"></script>  
+  
+  <!-- LiveReload DevMode (remove) -->
+  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+  <!-- end LiveReload DevMode (remove when complete) -->
+  
 </head>
 <body>
   <aside id="nav" role="complementary">    
@@ -177,20 +182,25 @@
       <div class="clearfix"></div>
 
       <div class="code-example-tabs">
+
+
         <div class="tab-pane">
-<pre class="sunlight-highlight-ruby">
-class ModelBase
+<pre>
+<code class="ruby">class ModelBase
   attr_accessor :type
 
   def initialize(*attributes)
     @type = "Sample Ruby Code"
   end
 end
-</pre>
+</code></pre>
       </div>
+
+
+
       <div class="tab-pane">
-<pre class="sunlight-highlight-csharp">
-// Namespace Declaration
+<pre>
+<code class="csharp">// Namespace Declaration
 using System;
 
 // helper class
@@ -216,7 +226,9 @@ class OutputClass
         // Some resource cleanup routines
     }
 }
-</pre>     
+</code></pre>   
+
+
       </div>
     </div>
 
@@ -238,54 +250,71 @@ class OutputClass
       </div>
       <div class="clearfix"></div>
 
+      
+      
+      
       <div class="code-example-tabs">
+        
+        
         <div class="tab-pane">
-<pre class="sunlight-highlight-ruby">
-# Ruby
-</pre>
+<pre><code class="ruby"># Ruby
+</code></pre>
       </div>
+      
+      
+      
       <div class="tab-pane">
-<pre class="sunlight-highlight-csharp">
-// C#
-</pre>     
+<pre><code class="csharp">// C#
+</code></pre>
       </div>
+      
+      
+      
       <div class="tab-pane">
-<pre class="sunlight-highlight-java">
-// Java
-</pre>     
+<pre><code class="java">// Java
+</code></pre>     
       </div>
+      
+      
+      
       <div class="tab-pane">
-<pre class="sunlight-highlight-php">
-&lt;?php
+<pre><code class="php">&lt;?php
 ?&gt;
-</pre>     
+</code></pre>
       </div>
+      
+      
+      
       <div class="tab-pane">
-<pre class="sunlight-highlight-javascript">
-// nodejs;
-</pre>     
+<pre><code class="javascript">// nodejs;
+</code></pre>    
       </div>
+      
+      
+      
       <div class="tab-pane">
-<pre class="sunlight-highlight-go">
-package go
+<pre><code class="go">package go
 
 import "math"
-</pre>     
+</code></pre>
       </div>
+      
+      
+      
       <div class="tab-pane">
-<pre class="sunlight-highlight-scala">
-// Scala
-</pre>     
+<pre><code class="scala">// Scala
+</code></pre>
       </div>
+      
+      
+      
       <div class="tab-pane">
-<pre class="sunlight-highlight-lisp">
-(comment
-
+<pre><code class="clojure">(comment
 (defn hey []
   ("Clojure!"))
 
 )
-</pre>     
+</code></pre>
       </div>
 
     </div>    
@@ -295,9 +324,5 @@ import "math"
 
   <p><br /><br /><br /><br /><br /><br /><br /></p>
   </div>
-
-  <!-- LiveReload DevMode (remove) 
-  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
-  end LiveReload DevMode (remove when complete) -->
 </body>
 </html>

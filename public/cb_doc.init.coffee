@@ -1,11 +1,11 @@
-$ ->
+$ -> 
     
   CB.Doc.Navigation.assign_data_groups_nav1()
   CB.Doc.Navigation.assign_data_groups_nav2()  
   CB.Doc.Navigation.collapse_all()
   CB.Doc.Navigation.reset_icons()
   
-  Sunlight.highlightAll();
+  hljs.initHighlightingOnLoad();
   
   $('div.codesample a').click (e) =>
     e.preventDefault()

@@ -1,4 +1,4 @@
-class CodeSamples
+class CodeSamples 
     
   constructor: () ->
   

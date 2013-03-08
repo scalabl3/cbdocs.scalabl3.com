@@ -2,18 +2,23 @@
 <html>
 <head>
   <title>sample layout</title>
-  <link rel="stylesheet" href="bootstrap2/css/bootstrap.min.css" type="text/css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" type="text/css" media="screen" title="no title" charset="utf-8">
   <link rel="stylesheet" href="bootstrap/css/bootstrap-responsive.min.css" type="text/css" media="screen" title="no title" charset="utf-8">
-  <link rel="stylesheet" href="sunlight-1.17.437/themes/sunlight.default.css" type="text/css" media="screen" title="no title" charset="utf-8">
-  <link rel="stylesheet" href="cb_doc.css" type="text/css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="css/cb_doc.css" type="text/css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="highlight.js/styles/tomorrow.css" type="text/css" media="screen" title="no title" charset="utf-8">
   
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script src="sunlight-1.17.437/sunlight-all-min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="highlight.js/highlight.pack.js" type="text/javascript" charset="utf-8"></script>
 
   
-  <script src="cb_doc.navigation.js" type="text/javascript" charset="utf-8"></script>
-  <script src="cb_doc.codesamples.js" type="text/javascript" charset="utf-8"></script>
-  <script src="cb_doc.init.js" type="text/javascript" charset="utf-8"></script>  
+  <script src="js/cb_doc.navigation.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/cb_doc.codesamples.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/cb_doc.init.js" type="text/javascript" charset="utf-8"></script>  
+  
+  <!-- LiveReload DevMode (remove) -->
+  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+  <!-- end LiveReload DevMode (remove when complete) -->
+  
 </head>
 <body>
   <aside id="nav" role="complementary">    
@@ -224,8 +229,5 @@
   <p><br /><br /><br /><br /><br /><br /><br /></p>
   </div>
 
-<!-- LiveReload DevMode (remove) 
-<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
-end LiveReload DevMode (remove when complete) -->
 </body>
 </html>

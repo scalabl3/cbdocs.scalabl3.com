@@ -1,4 +1,4 @@
-class Navigation
+class Navigation 
   _icon_collapsed_class = "icon-chevron-right"
   _icon_expanded_class = "icon-chevron-down"
   _single_node_expanded = true
