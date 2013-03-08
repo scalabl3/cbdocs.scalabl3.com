@@ -1,0 +1,91 @@
+$nav-width: 235px
+
+html, body
+  background: black
+  
+h1, h2, h3
+  color: white
+  
+#content
+  padding: 50px 25px
+  background: #eee
+  position: fixed
+  top: 0
+  right: 0
+  height: 100%
+  overflow: auto
+  z-index: 2
+  margin-left: $nav-width
+  
+  h1, h2, h3, h4, h5, h6
+    color: black
+  
+#nav
+  width: $nav-width
+  height: 100%
+  overflow: auto
+  top: 0
+  left: 0
+  position: fixed
+  z-index: 1
+  background: #222
+
+  .nav-header
+    padding: 5px 5px 5px 15px
+    
+  
+  .nav-list > li > a, .nav-list 
+    font-size: 12px
+    text-shadow: none
+    color: #aaa
+    font-family: "titillium",verdana,arial,sans-serif
+    font-weight: 400
+    
+    
+  ul
+    margin: 20px 10px
+  
+.nav1
+  border: 1px #555 solid
+  border-top-left-radius: 5px
+  border-bottom-left-radius: 5px
+  background: #555
+  
+  white-space: nowrap
+  color: #fff
+
+  font-size: 14px
+  text-transform: capitalize
+  font-weight: 400
+  
+.nav2
+  margin: 2px
+  margin: 2px 0px 2px 5px
+  padding-left: 7px
+  color: #aaa !important
+  font-size: 12px
+  text-shadow: none
+  
+.nav2:hover
+  color: red
+  
+div.code-example
+  margin: 40px 0
+  
+  div.code-example-buttons
+    margin-top: 10px
+    
+  div.code-example-title 
+    font-size: 18px
+    font-weight: bold
+    float: left
+
+    div.description
+      font-size: 12px
+      font-weight: normal
+    
+    small
+      font-size: 12px
+      font-weight: normal
+      padding: 0 10px
+      color: #999
